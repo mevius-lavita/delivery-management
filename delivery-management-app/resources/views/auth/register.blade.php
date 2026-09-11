@@ -17,7 +17,7 @@
         </p>
 
 
-        <form action="#" method="POST" class="mt-8 space-y-5">
+        <form action="{{ route('register') }}" method="POST" class="mt-8 space-y-5">
 
             @csrf
 
@@ -94,7 +94,7 @@
         <p class="text-center text-sm text-gray-500 mt-6">
             すでにアカウントをお持ちですか？
 
-            <a href="#" class="text-blue-600 hover:underline">
+            <a href="{{ url('/login') }}" class="text-blue-600 hover:underline">
                 ログイン
             </a>
         </p>
